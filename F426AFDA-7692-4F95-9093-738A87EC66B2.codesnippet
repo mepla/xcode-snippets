@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>multicast</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Multicast delegate add and remove methods
+
+- (void)addDelegate:(id)delegate{
+    [self.multicastDelegate addDelegate:delegate delegateQueue:dispatch_get_main_queue()];
+}
+
+- (void)addDelegate:(id)delegate delegateQueue:(dispatch_queue_t)delegateQueue{
+    [self.multicastDelegate addDelegate:delegate delegateQueue:delegateQueue];
+}
+
+- (void)removeDelegate:(id)delegate delegateQueue:(dispatch_queue_t)delegateQueue{
+    [self.multicastDelegate removeDelegate:delegate delegateQueue:delegateQueue];
+}
+
+- (void)removeDelegate:(id)delegate{
+    [self.multicastDelegate removeDelegate:delegate];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F426AFDA-7692-4F95-9093-738A87EC66B2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Multicast Delegate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
