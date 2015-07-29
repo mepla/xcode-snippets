@@ -20,6 +20,15 @@
     
     return _sharedInstance;
 }
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>995794BC-FB8B-44AD-8B1D-A32F1C56D94C</string>
